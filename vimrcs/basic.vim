@@ -110,7 +110,7 @@ endif
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -231,11 +231,16 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Close the current buffer
+" Useful mappings for managing buffers
+map <leader>bn :bnext<cr>
+map <leader>b<leader> :bnext<cr>
+map <leader>bp :bprev<cr>
 map <leader>bd :Bclose<cr>
-
-" Close all the buffers
 map <leader>ba :bufdo bd<cr>
+
+" maps for errors
+map <leader>ln :lnext<cr>
+map <leader>lp :lprev<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
@@ -303,14 +308,13 @@ if has("mac") || has("macunix")
 endif
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
-"func! DeleteTrailingWS()
-"  exe "normal mz"
-"  %s/\s\+$//ge
-"  exe "normal `z"
-"endfunc
-"autocmd BufWrite *.py :call DeleteTrailingWS()
-"autocmd BufWrite *.coffee :call DeleteTrailingWS()
-
+" func! DeleteTrailingWS()
+"   exe "normal mz"
+"   %s/\s\+$//ge
+"   exe "normal `z"
+" endfunc
+" autocmd BufWrite *.py :call DeleteTrailingWS()
+" autocmd BufWrite *.coffee :call DeleteTrailingWS()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ag searching and cope displaying
