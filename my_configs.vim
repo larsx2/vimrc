@@ -11,7 +11,6 @@ set splitright
 let g:ycm_autoclose_preview_window_after_completion = 1
  
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme="murmur"
 
 " use powerline patched fonts for airline
 let g:airline_powerline_fonts = 1
@@ -25,3 +24,6 @@ set nofoldenable
 
 " set nerdtree to the left
 let g:NERDTreeWinPos = "left"
+
+" tell syntactic to populate loc list
+let g:syntastic_always_populate_loc_list = 1
