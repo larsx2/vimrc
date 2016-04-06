@@ -2,7 +2,7 @@
 " nmap s <Plug>(easymotion-s2)
 " nmap t <Plug>(easymotion-t2)
 
-map <leader>tb :Tagbar<cr>
+nnoremap <leader>tb :Tagbar<cr>
 
 set splitbelow
 set splitright
@@ -45,3 +45,6 @@ function! GoToOpenFold(direction)
   endif
   call cursor(start, 0)
 endfunction
+
+" map comments to cc
+nnoremap <leader>cc :Commentary<cr>
