@@ -27,3 +27,21 @@ let g:NERDTreeWinPos = "left"
 
 " tell syntactic to populate loc list
 let g:syntastic_always_populate_loc_list = 1
+
+" set ]z and [z go to find open folds
+function! GoToOpenFold(direction)
+  if (a:direction == "next")
+    normal zj
+    let start = line('.')
+    while foldclosed(start) != -1
+      let start = start + 1
+    endwhile
+  else
+    normal zk
+    let start = line('.')
+    while foldclosed(start) != -1
+      let start = start - 1
+    endwhile
+  endif
+  call cursor(start, 0)
+endfunction
