@@ -9,6 +9,7 @@ set splitright
 
 " Autoclose YCM doc previews
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
  
 let g:airline#extensions#tabline#enabled = 1
 
@@ -16,7 +17,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " highlights the background in red for text that goes over the 80 column limit
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+highlight OverLength ctermbg=blue ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 " disable folding
@@ -47,4 +48,8 @@ function! GoToOpenFold(direction)
 endfunction
 
 " map comments to cc
-nnoremap <leader>cc :Commentary<cr>
+noremap <leader>cc :Commentary<cr>
+
+" set tags
+set tags=tags;
+let g:easytags_dynamic_files = 1
