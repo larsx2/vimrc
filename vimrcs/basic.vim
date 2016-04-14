@@ -232,10 +232,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Useful mappings for managing buffers
+map ]b :bn<cr>
+map [b :bp<cr>
 map \] :bn<cr>
 map \[ :bp<cr>
-map \o :bn<cr>
-map \p :bp<cr>
 map \d :Bclose<cr>
 map <leader>ba :bufdo bd<cr>
 
@@ -336,10 +336,10 @@ vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 "   <leader>cc
 "
 " To go to the next search result do:
-"   <leader>n
+"   <leader>cn
 "
 " To go to the previous search results do:
-"   <leader>p
+"   <leader>cp
 "
 map <leader>cc :botright cope<cr>
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
