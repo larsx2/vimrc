@@ -232,8 +232,6 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Useful mappings for managing buffers
-map ]b :bn<cr>
-map [b :bp<cr>
 map \] :bn<cr>
 map \[ :bp<cr>
 map \d :Bclose<cr>
