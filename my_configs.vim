@@ -1,7 +1,3 @@
-" Gif config
-" nmap s <Plug>(easymotion-s2)
-" nmap t <Plug>(easymotion-t2)
-
 nnoremap <leader>tb :Tagbar<cr>
 
 set splitbelow
@@ -50,6 +46,5 @@ endfunction
 " map comments to cc
 noremap <leader>cc :Commentary<cr>
 
-" set tags
-set tags=tags;
-let g:easytags_dynamic_files = 1
+nnoremap <C-w>] :bn<cr>
+nnoremap <C-w>[ :bp<cr>
