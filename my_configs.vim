@@ -48,3 +48,6 @@ noremap <leader>cc :Commentary<cr>
 
 nnoremap <C-w>] :bn<cr>
 nnoremap <C-w>[ :bp<cr>
+
+let g:SimpylFold_fold_docstring = 0
+let g:SimpylFold_fold_import = 0
