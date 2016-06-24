@@ -51,3 +51,6 @@ nnoremap <C-w>[ :bp<cr>
 
 let g:SimpylFold_fold_docstring = 0
 let g:SimpylFold_fold_import = 0
+
+" don't require jsx extension to highlight
+let g:jsx_ext_required = 0
